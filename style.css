@@ -1,0 +1,74 @@
+:root {
+    --main-color: #d3ad7f;
+    --black: #7a6f3b;
+    --bg: #d1c376;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    font-size: 10px;
+}
+
+* {
+margin:0;
+padding:0;
+outline: none;
+border: none;
+text-decoration: none;
+text-transform: capitalize;
+transition: 0.2s linear;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.container {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border)
+}
+.header .container .logo 
+img{
+    width: 70px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.header .container .navbar a{
+    font-size: 1.8rem;
+    color: var(#fff);
+    margin: 0 1rem;
+}
+ .navbar a:hover {
+    color: var(#000);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+ .icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+ .icons
+ img:hover {
+    width: 40px;
+    height: 40px;
+ }
+
+ .btn { 
+    background:var (--main-color);
+    color :#fff;
+ }
